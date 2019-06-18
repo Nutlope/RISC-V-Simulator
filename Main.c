@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "Instruction_Memory.h"
+#include "Core.h"
 #include "Parser.h"
 
 int main(int argc, const char *argv[])
@@ -19,5 +19,9 @@ int main(int argc, const char *argv[])
     loadInstructions(&instr_mem, argv[1]);
     
     /* Task Two */
-    // 
+    // TODO, implement Core.{h,c}
+    Core *core = initCore(&instr_mem);
+
+    /* Task Three */
+    
 }

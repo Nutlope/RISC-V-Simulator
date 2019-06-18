@@ -1,4 +1,4 @@
-SOURCE	:= Main.c Parser.c Registers.c
+SOURCE	:= Main.c Parser.c Registers.c Core.c
 CC	:= gcc
 TARGET	:= RVSim
 
