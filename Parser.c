@@ -36,6 +36,7 @@ void loadInstructions(Instruction_Memory *i_mem, const char *trace)
             strcmp(raw_instr, "and") == 0)
         {
             parseRType(raw_instr, &(i_mem->instructions[IMEM_index]));
+            i_mem->last = &(i_mem->instructions[IMEM_index]);
 	}
 
         IMEM_index++;

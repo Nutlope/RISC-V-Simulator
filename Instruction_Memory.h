@@ -7,6 +7,8 @@
 typedef struct
 {
     Instruction instructions[IMEM_SIZE];
+
+    Instruction *last; // Points to the last instruction
 }Instruction_Memory;
 
 #endif
