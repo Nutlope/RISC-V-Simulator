@@ -23,8 +23,10 @@ int main(int argc, const char *argv[])
     // TODO, implement Core.{h,c}
     Core *core = initCore(&instr_mem);
 
-    /* Task Three */
+    /* Task Three - Simulation */
+    while (core->tick(core));
 
+    printf("Simulation is finished.\n");
 
     free(core);    
 }
