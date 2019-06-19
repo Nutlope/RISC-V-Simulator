@@ -1,1 +1,3 @@
 This is the C version of https://github.com/Shihao-Song/DREXEL-DISCO-RISC-V-Simulator.
+Course projects are little bit different from that of C++ version.
+Both C and C++ implementations can be used for intermediate level research on RISC-V.
