@@ -7,6 +7,8 @@ Core *initCore(Instruction_Memory *i_mem)
     core->PC = 0;
     core->instr_mem = i_mem;
     core->tick = tickFunc;
+
+    return core;
 }
 
 // FIXME, implement this function
