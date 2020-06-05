@@ -23,7 +23,7 @@ int main(int argc, const char *argv[])
     while (1)
     {
         Instruction *instr = &(instr_mem.instructions[PC / 4]);
-        printf("Instruction at PC: %u\n", PC);
+        printf("\nInstruction at PC: %u\n", PC);
         unsigned mask = (1 << 31);
         for (int i = 31; i >= 0; i--)
         {
@@ -32,8 +32,7 @@ int main(int argc, const char *argv[])
 
             mask >>= 1;
         }
-
-        printf("\n\n");
+        printf("\n");
         if (instr == instr_mem.last) { break; }
         PC += 4;
     }
