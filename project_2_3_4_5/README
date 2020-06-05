@@ -1,0 +1,7 @@
+This is the C implementation of https://github.com/Shihao-Song/DREXEL-DISCO-RISC-V-Simulator.
+
+To compile:
+make
+
+To run:
+./RVSim cpu_traces/example_cpu_trace

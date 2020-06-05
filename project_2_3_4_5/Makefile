@@ -8,4 +8,4 @@ $(TARGET): $(SOURCE)
 	$(CC) -o $(TARGET) $(SOURCE)
 
 clean:
-	rm $(TARGET)
+	rm -f $(TARGET)
