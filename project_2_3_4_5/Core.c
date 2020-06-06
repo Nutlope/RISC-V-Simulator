@@ -8,6 +8,12 @@ Core *initCore(Instruction_Memory *i_mem)
     core->instr_mem = i_mem;
     core->tick = tickFunc;
 
+    // FIXME, initialize register file here.
+    // core->data_mem[0] = ...
+
+    // FIXME, initialize data memory here.
+    // core->reg_file[0] = ...
+
     return core;
 }
 
