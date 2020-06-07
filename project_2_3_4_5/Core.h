@@ -58,14 +58,14 @@ Signal ALUControlUnit(Signal ALUOp,
 Signal ImmeGen(Signal input);
 
 // FIXME (4). ALU
-Signal ALU(Signal input_0,
-           Signal input_1,
-           Signal ALU_ctrl_signal,
-           Signal ALU_result,
-           Signal zero);
+void ALU(Signal input_0,
+         Signal input_1,
+         Signal ALU_ctrl_signal,
+         Signal *ALU_result,
+         Signal *zero);
 
 // (4). MUX
-Signal MUM(Signal sel,
+Signal MUX(Signal sel,
            Signal input_0,
            Signal input_1);
 
