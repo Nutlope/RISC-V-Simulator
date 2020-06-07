@@ -34,7 +34,7 @@ typedef struct Core
 Core *initCore(Instruction_Memory *i_mem);
 bool tickFunc(Core *core);
 
-// FIXME. Implement the following functions
+// FIXME. Implement the following functions in Core.c
 // FIXME (1). Control Unit.
 typedef struct ControlSignals
 {
