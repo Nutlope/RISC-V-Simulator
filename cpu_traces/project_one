@@ -3,3 +3,17 @@ ld x9, 0(x10)
 addi x22, x22, 1
 slli x11, x22, 3
 bne x8, x24, -4
+
+EXPlANATIONS
+add x10, x10, x25 -> x10 = x10 + x25 (x represents registers)
+ld x9, 0(x10) -> Load the memory address 0 from reg 10 into reg 9
+addi x22, x22, 1 -> add 1 to reg 22
+slli x11, x22, 3 -> shift left 3 bits (x11 = x22 << 3) multiplied by 2^3
+bne x8, x24, -4 -> branch if not equal. (if (x8 != x24) go to memory address 4?)
+
+ANSWER
+(add) R-Type: 0000000 11001 01010 000 01010 0110011
+(ld)  I-Type: 0000000 00000 01010 011 01001 0000011
+(addi) I-Type: 000000000001 10110 000 10110 0010011
+(slli) I-Type: 000000000011 10110 001 01011 0010011
+(bne) SB-Type: 1111111 11000 01000 001 11011 1100111  
