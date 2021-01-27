@@ -1,7 +1,6 @@
 #include "Parser.h"
 
 // Q: How does loadInstructions even run?
-
 // Here shows an example on how to translate "add x10, x10, x25"
 void loadInstructions(Instruction_Memory *i_mem, const char *trace)
 {
