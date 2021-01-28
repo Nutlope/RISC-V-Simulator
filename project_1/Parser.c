@@ -32,7 +32,8 @@ void loadInstructions(Instruction_Memory *i_mem, const char *trace)
             parseRType(raw_instr, &(i_mem->instructions[IMEM_index]));
             i_mem->last = &(i_mem->instructions[IMEM_index]);
         }
-        else if (strcmp(raw_instr, "addi") == 0 ||
+        else if (strcmp(raw_instr, "ld") == 0 ||
+                 strcmp(raw_instr, "addi") == 0 ||
                  strcmp(raw_instr, "slli") == 0)
         {
             parseIType(raw_instr, &(i_mem->instructions[IMEM_index]));
@@ -85,7 +86,6 @@ void parseIType(char *opr, Instruction *instr)
     unsigned opcode = 0;
     unsigned funct3 = 0;
     unsigned funct7 = 0;
-
     if (strcmp(opr, "addi") == 0)
     {
         opcode = 19;
@@ -95,19 +95,40 @@ void parseIType(char *opr, Instruction *instr)
     else if (strcmp(opr, "slli") == 0)
     {
         opcode = 19;
-        funct3 = 0;
+        funct3 = 1;
         funct7 = 0;
     }
-    // A: Why do we have NULL in strtok. Because it's a continuation of the strtok on line 29
+    else if (strcmp(opr, "ld") == 0)
+    {
+        opcode = 3;
+        funct3 = 3;
+        funct7 = 0;
+    }
+
     char *reg = strtok(NULL, ", ");
     unsigned rd = regIndex(reg);
 
-    reg = strtok(NULL, ", ");
-    unsigned rs_1 = regIndex(reg);
+    unsigned rs_1;
+    unsigned imm;
 
-    reg = strtok(NULL, "\n");
-    char *pEnd;
-    unsigned imm = strtol(reg, &pEnd, 10); // It's a constant, not a regIndex so removed
+    if (strcmp(opr, "ld") == 0)
+    {
+        reg = strtok(NULL, "(");
+        char *pEnd;
+        imm = strtol(reg, &pEnd, 10);
+
+        reg = strtok(NULL, ")");
+        rs_1 = regIndex(reg);
+    }
+    else
+    {
+        reg = strtok(NULL, ", ");
+        rs_1 = regIndex(reg);
+
+        reg = strtok(NULL, "\n");
+        char *pEnd;
+        imm = strtol(reg, &pEnd, 10);
+    }
 
     // Contruct instruction
     instr->instruction |= opcode;
@@ -119,8 +140,8 @@ void parseIType(char *opr, Instruction *instr)
 
 int regIndex(char *reg)
 {
-    unsigned i = 0;
-    for (i; i < NUM_OF_REGS; i++)
+    unsigned i;
+    for (i = 0; i < NUM_OF_REGS; i++)
     {
         if (strcmp(REGISTER_NAME[i], reg) == 0)
         {
