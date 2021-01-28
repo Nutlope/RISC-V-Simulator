@@ -1,5 +1,7 @@
 #include "Parser.h"
 
+// Weird bug where is there's an unknown command like bne in the second line it doesn't know what to do and prints extra line
+
 void loadInstructions(Instruction_Memory *i_mem, const char *trace)
 {
     printf("Loading trace file: %s\n", trace);
@@ -103,9 +105,9 @@ void parseIType(char *opr, Instruction *instr)
     reg = strtok(NULL, ", ");
     unsigned rs_1 = regIndex(reg);
 
-    reg = strtok(NULL, ", ");
-    reg[strlen(reg) - 1] = '\0';
-    unsigned imm = regIndex(reg);
+    reg = strtok(NULL, "\n");
+    char *pEnd;
+    unsigned imm = strtol(reg, &pEnd, 10); // It's a constant, not a regIndex so removed
 
     // Contruct instruction
     instr->instruction |= opcode;

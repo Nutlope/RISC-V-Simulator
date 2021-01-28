@@ -1,4 +1,3 @@
 add x10, x10, x25
-bne x8, x24, -4
 addi x22, x22, 1
 slli x11, x22, 3
