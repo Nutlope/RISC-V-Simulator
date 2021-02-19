@@ -24,8 +24,9 @@ typedef struct Core
     // What else you need? Data memory? Register file?
     Instruction_Memory *instr_mem;
    
-    Byte data_mem[1024]; // data memory
-
+    Byte data_mem[40]; // data memory
+    // uint64_t data_mem[32]; // data memory
+  
     Register reg_file[32]; // register file.
 
     bool (*tick)(Core *core);

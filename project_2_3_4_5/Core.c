@@ -44,31 +44,16 @@ bool tickFunc(Core *core)
     int func3 = ((instruction & 28672) >> 12); // ALL
     int func7 = ((instruction & 4261412864) >> 25); // Rtype & some Itype ONLY 
 
-    printf("=======DEBUG=======\n");
+    printf("=======ITERATION=======\n");
     printf("op: %d\n", opcode);
-    printf("rs1: %d\n", rs1);
-    printf("rs2: %d\n", rs2);
-    printf("rd: %d\n", rd);
-    printf("func3: %d\n", func3);
-    printf("func7: %d\n", func7);
-    printf("ALUOp: %ld\n", signals->ALUOp);
-    printf("Instr: %d\n", instruction);
     
     // (Step 3.2) Feed it into ALU which feeds into rd
     int rs1_ALU_input = core->reg_file[rs1];
     int rs2_ALU_input = MUX(signals->ALUSrc, core->reg_file[rs2], ImmeGen(instruction));
     ALU(rs1_ALU_input, rs2_ALU_input, ALUControlUnit(signals->ALUOp, func7, func3), ALU_result, zero);
-    printf("*zero: %ln\n", zero);
 
-    // TODO: FIX the Zero not responding
-    // if ((*zero == 1) && (signals->Branch == 1)) {
-    if (signals->Branch == 1) {
-      // Target address = PC + Immed * 2
-      printf("SBType Stuff is happening\n");
-      printf("ImmeGen: %ld\n", ImmeGen(instruction));
-      // TODO: Uncomment this line out and get rid of line above
-      // core->PC += ShiftLeft1(ImmeGen(instruction));
-      core->PC += 2 * ImmeGen(instruction);
+    if ((*zero == 1) && (signals->Branch == 1)) {
+      core->PC += ShiftLeft1(ImmeGen(instruction));
     }
     else {
       modified_ALU_result = (int) *ALU_result;
@@ -76,8 +61,10 @@ bool tickFunc(Core *core)
       core->reg_file[rd] = MUX(signals->MemtoReg, *ALU_result, memory_data);
       core->PC += 4;
     }
-    printf("Reg_file[%d]: %ld\n", rd, core->reg_file[rd]);
-    printf("core->PC: %ld\n", core->PC);
+    // printf("Reg_file[%d]: %ld\n", rd, core->reg_file[rd]);
+    printf("Reg_file[9]: %lld\n", core->reg_file[9]);
+    printf("Reg_file[11]: %lld\n", core->reg_file[9]);
+    printf("core->PC: %llu\n", core->PC);
 
     ++core->clk;
     if (core->PC > core->instr_mem->last->addr)
@@ -140,12 +127,12 @@ Signal ALUControlUnit(Signal ALUOp,
 {
     // For add
     if (ALUOp == 2 && Funct7 == 0 && Funct3 == 0) {
-        return 2;
+      return 2;
     }
 
     // For ld; returns 3
     else if (ALUOp == 0 && Funct3 == 3) {
-        return 3;
+      return 3;
     }
 
     // For addi; returns 4
@@ -162,27 +149,40 @@ Signal ALUControlUnit(Signal ALUOp,
     else if (ALUOp == 1 && Funct3 == 1) {
       return 6;
     }
-
+    else {
+      return -1;
+    }
 }
 
 Signal ImmeGen(Signal input)
 {
   Signal immediate;
+  Signal twelveBit_sign = 0xFFFFFFFFFFFFF000;  // 18446744073709547520
+  Signal thirteenBit_sign = 0xFFFFFFFFFFFFE000; // 18446744073709543424
   int opcode = (input & 127);
 
   if (opcode == 51) {
     // do R-type stuff here
     immediate = 0;
-  } else if (opcode == 103) {
+  } 
+  else if (opcode == 103) {
     // Do SB-type stuff here; 13 bits total
     immediate = (input & 3840) >> 7;                // immd[4:0] 5 bits long
     immediate |= (input & 2113929216) >> 20;        // immd[10:5] 6 bits long
     immediate |= (input & 128) << 4;                // immd[11] 1 bit
-    immediate |= (input & 2147483648) >> 19;        // immd[12] 1 bit
+    immediate |= (input & 2147483648) >> 19;       // immd[12] 1 bit
+    if ((immediate & 4096) == 4096)  { // if immediate value is negative 
+      // printf("The immediate is NEGATIVE\n");
+      immediate |= thirteenBit_sign; // signing the 64bit ImmeGen output
+    }
 
   } else {
     // do I-type stuff here; 12 bits total
     immediate = (input & 4293918720) >> 20;          // immd[11:0]
+    if ((immediate & 2048) == 2048)  { // if immediate value is negative
+      // printf("The immediate is NEGATIVE\n");
+      immediate |= twelveBit_sign; // signing the 64bit ImmeGen output
+    }
   }
   return immediate;
 }
@@ -222,8 +222,13 @@ void ALU(Signal input_0,
     // For bne
     else if (ALU_ctrl_signal == 6)
     { 
-      *ALU_result = 0;
-      *zero = 1;
+      if ((input_0 - input_1) == 0) {
+        *zero = 0;
+      }
+      else {
+        *ALU_result = 0;
+        *zero = 1;
+      }
     }
     
 }
