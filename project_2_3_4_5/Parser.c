@@ -181,8 +181,8 @@ void parseSBType(char *opr, Instruction *instr)
 
 int regIndex(char *reg)
 {
-    unsigned i = 0;
-    for (i; i < NUM_OF_REGS; i++)
+    unsigned i;
+    for (i = 0; i < NUM_OF_REGS; i++)
     {
         if (strcmp(REGISTER_NAME[i], reg) == 0)
         {
