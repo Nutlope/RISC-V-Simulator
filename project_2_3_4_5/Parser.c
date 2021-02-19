@@ -1,7 +1,5 @@
 #include "Parser.h"
 
-// FIXME, implement this function.
-// Here shows an example on how to translate "add x10, x10, x25"
 void loadInstructions(Instruction_Memory *i_mem, const char *trace)
 {
     printf("Loading trace file: %s\n", trace);
@@ -27,17 +25,23 @@ void loadInstructions(Instruction_Memory *i_mem, const char *trace)
 
         // Extract operation
         char *raw_instr = strtok(line, " ");
-        if (strcmp(raw_instr, "add") == 0 ||
-            strcmp(raw_instr, "sub") == 0 ||
-            strcmp(raw_instr, "sll") == 0 ||
-            strcmp(raw_instr, "srl") == 0 ||
-            strcmp(raw_instr, "xor") == 0 ||
-            strcmp(raw_instr, "or")  == 0 ||
-            strcmp(raw_instr, "and") == 0)
+        if (strcmp(raw_instr, "add") == 0)
         {
             parseRType(raw_instr, &(i_mem->instructions[IMEM_index]));
             i_mem->last = &(i_mem->instructions[IMEM_index]);
-	}
+        }
+        else if (strcmp(raw_instr, "ld") == 0 ||
+                 strcmp(raw_instr, "addi") == 0 ||
+                 strcmp(raw_instr, "slli") == 0)
+        {
+            parseIType(raw_instr, &(i_mem->instructions[IMEM_index]));
+            i_mem->last = &(i_mem->instructions[IMEM_index]);
+        }
+        else if (strcmp(raw_instr, "bne") == 0)
+        {
+            parseSBType(raw_instr, &(i_mem->instructions[IMEM_index]));
+            i_mem->last = &(i_mem->instructions[IMEM_index]);
+        }
 
         IMEM_index++;
         PC += 4;
@@ -45,7 +49,6 @@ void loadInstructions(Instruction_Memory *i_mem, const char *trace)
 
     fclose(fd);
 }
-
 void parseRType(char *opr, Instruction *instr)
 {
     instr->instruction = 0;
@@ -67,7 +70,7 @@ void parseRType(char *opr, Instruction *instr)
     unsigned rs_1 = regIndex(reg);
 
     reg = strtok(NULL, ", ");
-    reg[strlen(reg)-1] = '\0';
+    reg[strlen(reg) - 1] = '\0';
     unsigned rs_2 = regIndex(reg);
 
     // Contruct instruction
@@ -78,11 +81,99 @@ void parseRType(char *opr, Instruction *instr)
     instr->instruction |= (rs_2 << (7 + 5 + 3 + 5));
     instr->instruction |= (funct7 << (7 + 5 + 3 + 5 + 5));
 }
+void parseIType(char *opr, Instruction *instr)
+{
+    instr->instruction = 0;
+    unsigned opcode = 0;
+    unsigned funct3 = 0;
+    unsigned funct7 = 0;
+
+    if (strcmp(opr, "addi") == 0)
+    {
+        opcode = 19;
+        funct3 = 0;
+        funct7 = 0;
+    }
+    else if (strcmp(opr, "slli") == 0)
+    {
+        opcode = 19;
+        funct3 = 1;
+        funct7 = 0;
+    }
+    else if (strcmp(opr, "ld") == 0)
+    {
+        opcode = 3;
+        funct3 = 3;
+        funct7 = 0;
+    }
+
+    char *reg = strtok(NULL, ", ");
+    unsigned rd = regIndex(reg);
+
+    unsigned rs_1;
+    unsigned imm;
+
+    if (strcmp(opr, "ld") == 0)
+    {
+        reg = strtok(NULL, "(");
+        char *pEnd;
+        imm = strtol(reg, &pEnd, 10);
+
+        reg = strtok(NULL, ")");
+        rs_1 = regIndex(reg);
+    }
+    else
+    {
+        reg = strtok(NULL, ", ");
+        rs_1 = regIndex(reg);
+
+        reg = strtok(NULL, "\n");
+        char *pEnd;
+        imm = strtol(reg, &pEnd, 10);
+    }
+
+    // Contruct instruction
+    instr->instruction |= opcode;
+    instr->instruction |= (rd << 7);
+    instr->instruction |= (funct3 << (7 + 5));
+    instr->instruction |= (rs_1 << (7 + 5 + 3));
+    instr->instruction |= (imm << (7 + 5 + 3 + 5));
+}
+void parseSBType(char *opr, Instruction *instr)
+{
+    instr->instruction = 0;
+    unsigned opcode = 0;
+    unsigned funct3 = 0;
+
+    if (strcmp(opr, "bne") == 0)
+    {
+        opcode = 103;
+        funct3 = 1;
+    }
+    char *reg = strtok(NULL, ", ");
+    unsigned rs_1 = regIndex(reg);
+
+    reg = strtok(NULL, ", ");
+    unsigned rs_2 = regIndex(reg);
+
+    reg = strtok(NULL, "\n");
+    char *pEnd;
+    unsigned immed = strtol(reg, &pEnd, 10);
+
+    instr->instruction |= opcode;
+    instr->instruction |= ((immed & 2048) >> 4); //immed[11]
+    instr->instruction |= ((immed & 30) << 7);   //immed[4:1]
+    instr->instruction |= (funct3 << (7 + 5));
+    instr->instruction |= (rs_1 << (7 + 5 + 3));
+    instr->instruction |= (rs_2 << (7 + 5 + 3 + 5));
+    instr->instruction |= ((immed & 2016) << 20); //immed[10:5]
+    instr->instruction |= ((immed & 4096) << 19); //immed[12]
+}
 
 int regIndex(char *reg)
 {
-    unsigned i = 0;
-    for (i; i < NUM_OF_REGS; i++)
+    unsigned i;
+    for (i = 0; i < NUM_OF_REGS; i++)
     {
         if (strcmp(REGISTER_NAME[i], reg) == 0)
         {
