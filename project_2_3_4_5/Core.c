@@ -62,9 +62,9 @@ bool tickFunc(Core *core)
       core->PC += 4;
     }
     // printf("Reg_file[%d]: %ld\n", rd, core->reg_file[rd]);
-    printf("Reg_file[9]: %lld\n", core->reg_file[9]);
-    printf("Reg_file[11]: %lld\n", core->reg_file[9]);
-    printf("core->PC: %llu\n", core->PC);
+    printf("Reg_file[9]: %ld\n", core->reg_file[9]);
+    printf("Reg_file[11]: %ld\n", core->reg_file[9]);
+    printf("core->PC: %ld\n", core->PC);
 
     ++core->clk;
     if (core->PC > core->instr_mem->last->addr)
@@ -127,12 +127,12 @@ Signal ALUControlUnit(Signal ALUOp,
 {
     // For add
     if (ALUOp == 2 && Funct7 == 0 && Funct3 == 0) {
-      return 2;
+        return 2;
     }
 
     // For ld; returns 3
     else if (ALUOp == 0 && Funct3 == 3) {
-      return 3;
+        return 3;
     }
 
     // For addi; returns 4
@@ -149,9 +149,7 @@ Signal ALUControlUnit(Signal ALUOp,
     else if (ALUOp == 1 && Funct3 == 1) {
       return 6;
     }
-    else {
-      return -1;
-    }
+
 }
 
 Signal ImmeGen(Signal input)
