@@ -1,0 +1,25 @@
+addi x1, x0, -1
+addi x3, x0, 4
+addi x1, x1, 1
+beq x1, x3, 44
+slli x6, x1, 3 
+add x7, x5, x6 
+sd x0, 0(x7)
+addi x2, x0, 0 
+beq x2, x3, -12
+slli x8, x2, 3
+add x9, x5, x8
+slli x11, x1, 2
+add x12, x11, x2
+slli x12, x12, 3
+add x12, x12, x20
+ld x13, 0(x12)
+sll x14, x13, x1
+slli x17, x1, 3
+add x17, x17, x5
+ld x15, 0(x17)
+add x16, x14, x15
+sd x16, 0(x17)
+addi x2, x2, 1
+beq x0, x0, -30
+add x22, x22, x23

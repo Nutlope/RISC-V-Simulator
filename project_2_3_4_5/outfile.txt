@@ -1,0 +1,1730 @@
+Loading trace file: ../cpu_traces/project_three
+=======ITERATION=======
+core->PC: 4
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 8
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 12
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 16
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 20
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 24
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 28
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 0
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 1
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 3
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 8
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 12
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 16
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 20
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 24
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 28
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 0
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 8
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 18
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 30
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 8
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 12
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 16
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 20
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 24
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 28
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 0
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 32
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 68
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 108
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 8
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 12
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 16
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 20
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 24
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 28
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 0
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 96
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 200
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 36
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 40
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 44
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 48
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 52
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 56
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 60
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 64
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 68
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 72
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 76
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 80
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 84
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 312
+=======ITERATION=======
+core->PC: 88
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+=======ITERATION=======
+core->PC: 92
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+=======ITERATION=======
+core->PC: 32
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+=======ITERATION=======
+core->PC: 8
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+=======ITERATION=======
+core->PC: 12
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+=======ITERATION=======
+core->PC: 100
+out[0]: 6
+out[1]: 44
+out[2]: 152
+out[3]: 432
+Simulation is finished.

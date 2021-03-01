@@ -8,18 +8,9 @@ Core *initCore(Instruction_Memory *i_mem)
     core->instr_mem = i_mem;
     core->tick = tickFunc;
 
-    // Initialize register file here.
-    core->reg_file[25] = 4;
-    core->reg_file[10] = 4;
-    core->reg_file[22] = 1;
+    // Initialize base addresses
     core->reg_file[20] = 30; // Base address of mat[16]
     core->reg_file[5] = 158; // Base address of out[4]
-    core->reg_file[16] = 0; // Initialize x16 to zero
-    
-    // For testing purposes
-    core->reg_file[7] = 0; // Initialize x7 to 0
-    core->reg_file[6] = 0; // Initialize x6 to 0
-    core->reg_file[26] = 0; // Initialize x26 to 0
 
     // Initialize data memory here.
     core->data_mem[0] = 16;
@@ -27,7 +18,7 @@ Core *initCore(Instruction_Memory *i_mem)
     core->data_mem[16] = 8;
     core->data_mem[24] = 4;
 
-    // mat[16]
+    // Initialize mat[16]
     core->data_mem[30] = 0;
     core->data_mem[38] = 1;
     core->data_mem[46] = 2;
@@ -45,11 +36,11 @@ Core *initCore(Instruction_Memory *i_mem)
     core->data_mem[142] = 14;
     core->data_mem[150] = 15;
 
-    // out[4]
-    // core->data_mem[158] = 0;
-    // core->data_mem[166] = 0;
-    // core->data_mem[174] = 0;
-    // core->data_mem[182] = 0;
+    // Initialize out[4]
+    core->data_mem[158] = 0;
+    core->data_mem[166] = 0;
+    core->data_mem[174] = 0;
+    core->data_mem[182] = 0;
     
     return core;
 }
@@ -77,7 +68,7 @@ bool tickFunc(Core *core)
     int func7 = ((instruction & 4261412864) >> 25); // Rtype & some Itype ONLY 
 
     printf("=======ITERATION=======\n");
-    printf("op: %d\n", opcode);
+    // printf("op: %d\n", opcode);
     // printf("rd: %d\n", rd);
     // printf("rs1: %d\n", rs1);
     // printf("rs2: %d\n", rs2);
@@ -89,7 +80,7 @@ bool tickFunc(Core *core)
     // printf("*zero: %ld\n", *zero);
     // printf("func3: %d\n", func3);
     // printf("func7: %d\n", func7);
-    printf("ALUOp: %ld\n", signals->ALUOp);
+    // printf("ALUOp: %ld\n", signals->ALUOp);
     // printf("signals->Branch: %ld\n", signals->Branch);
 
     if ((*zero == 1) && (signals->Branch == 1)) {
@@ -117,15 +108,10 @@ bool tickFunc(Core *core)
     }
     
     printf("core->PC: %ld\n", core->PC);
-    // printf("x1: %ld\n", core->reg_file[1]);
-    // printf("reg_file[7]: %ld\n", core->reg_file[7]);
-    // printf("reg_file[6]: %ld\n", core->reg_file[6]);
-    printf("reg_file[26]: %ld\n", core->reg_file[26]);
-
-    printf("out[0]: %d\n", core->data_mem[158]);
-    printf("out[1]: %d\n", core->data_mem[166]);
-    printf("out[2]: %d\n", core->data_mem[174]);
-    printf("out[3]: %d\n", core->data_mem[182]);
+    printf("out[0]: %ld\n", core->data_mem[158]);
+    printf("out[1]: %ld\n", core->data_mem[166]);
+    printf("out[2]: %ld\n", core->data_mem[174]);
+    printf("out[3]: %ld\n", core->data_mem[182]);
 
     ++core->clk;
     if (core->PC > core->instr_mem->last->addr)
