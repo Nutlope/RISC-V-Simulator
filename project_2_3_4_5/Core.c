@@ -68,39 +68,21 @@ bool tickFunc(Core *core)
     int func7 = ((instruction & 4261412864) >> 25); // Rtype & some Itype ONLY 
 
     printf("=======ITERATION=======\n");
-    // printf("op: %d\n", opcode);
-    // printf("rd: %d\n", rd);
-    // printf("rs1: %d\n", rs1);
-    // printf("rs2: %d\n", rs2);
 
     // (Step 3.2) Feed it into ALU which feeds into rd
     int rs1_ALU_input = core->reg_file[rs1];
     int rs2_ALU_input = MUX(signals->ALUSrc, core->reg_file[rs2], ImmeGen(instruction));
     ALU(rs1_ALU_input, rs2_ALU_input, ALUControlUnit(signals->ALUOp, func7, func3), ALU_result, zero);
-    // printf("*zero: %ld\n", *zero);
-    // printf("func3: %d\n", func3);
-    // printf("func7: %d\n", func7);
-    // printf("ALUOp: %ld\n", signals->ALUOp);
-    // printf("signals->Branch: %ld\n", signals->Branch);
 
     if ((*zero == 1) && (signals->Branch == 1)) {
       core->PC += ShiftLeft1(ImmeGen(instruction));
-      // printf("Branching (SB-type)\n");
     }
     else {
       modified_ALU_result = (int) *ALU_result;
       if (signals->MemWrite == 1) {
         core->data_mem[modified_ALU_result] = core->reg_file[rs2];
-        // printf("ALU_result: %d\n", modified_ALU_result);
-        // printf("rs2_ALU_input: %d\n", rs2_ALU_input);
-        // printf("rs1_ALU_input: %d\n", rs1_ALU_input);
-        // printf("Memory Writing (S-type)\n");
       } 
       else {
-        // printf("R/I-type stuff\n");
-        // printf("ALU_result: %d\n", modified_ALU_result);
-        // printf("rs2_ALU_input: %d\n", rs2_ALU_input);
-        // printf("rs1_ALU_input: %d\n", rs1_ALU_input);
         Signal memory_data = core->data_mem[modified_ALU_result];
         core->reg_file[rd] = MUX(signals->MemtoReg, *ALU_result, memory_data);
       }
@@ -240,7 +222,6 @@ Signal ImmeGen(Signal input)
     immediate |= (input & 128) << 4;                // immd[11] 1 bit
     immediate |= (input & 2147483648) >> 19;       // immd[12] 1 bit
     if ((immediate & 4096) == 4096)  { // if immediate value is negative 
-      // printf("The immediate is NEGATIVE\n");
       immediate |= thirteenBit_sign; // signing the 64bit ImmeGen output
     }
   }
@@ -249,7 +230,6 @@ Signal ImmeGen(Signal input)
     immediate = (input & 3968) >> 7; // immd[4:0] 5 bits
     immediate |= (input & 4261412864) >> 18; // immd [11:5] 7 bits
     if ((immediate & 2048) == 2048)  { // if immediate value is negative
-      // printf("The immediate is NEGATIVE\n");
       immediate |= twelveBit_sign; // signing the 64bit ImmeGen output
     }
   }
@@ -257,7 +237,6 @@ Signal ImmeGen(Signal input)
     // do I-type stuff here; 12 bits total
     immediate = (input & 4293918720) >> 20;          // immd[11:0]
     if ((immediate & 2048) == 2048)  { // if immediate value is negative
-      // printf("The immediate is NEGATIVE\n");
       immediate |= twelveBit_sign; // signing the 64bit ImmeGen output
     }
   }
