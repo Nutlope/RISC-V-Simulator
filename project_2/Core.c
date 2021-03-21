@@ -138,7 +138,7 @@ void ControlUnit(Signal input,
         signals->Branch = 0;
         signals->ALUOp = 0;
     }
-    // for SB-type: bne and beq
+    // for SB-type: bne and beq 
     else if (input == 103) {
         signals->ALUSrc = 0; 
         signals->MemtoReg = 0;
